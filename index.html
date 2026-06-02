@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0b57ff">
 <title>Darshana Ayurveda</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -401,6 +405,10 @@ document.getElementById('selectedSupplierBox').innerHTML=`
 <b>${selectedSupplier.name}</b><br>
 Discount ${selectedSupplier.discount}%
 `;
+
+document.getElementById('supplierSearch').value='';
+document.getElementById('supplierResults').innerHTML='';
+
 }
 
 function switchCategory(el,type){
@@ -466,6 +474,10 @@ document.getElementById('selectedMedicineBox').innerHTML=`
 <b>${selectedMedicine.name}</b><br>
 ${selectedMedicine.type}
 `;
+
+document.getElementById('medicineSearch').value='';
+document.getElementById('medicineResults').innerHTML='';
+
 }
 
 function addToOrder(){
